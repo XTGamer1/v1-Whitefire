@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+.navbar-brand {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.bg-purple-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(126 34 206 / var(--tw-bg-opacity));
+}
+.bg-purple-700:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(126 34 206 / var(--tw-bg-opacity));
+}
+.text-purple-700 {
+  --tw-text-opacity: 1;
+  color: rgb(126 34 206 / var(--tw-text-opacity));
+}
+.text-purple-700:hover {
+  color: rgb(126 34 206 / var(--tw-text-opacity));
+}
+.navbar-nav .nav-link {
+  position: relative;
+  color: #333;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+.nav-link::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #7e22ce;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.custom-button :hover {
+  border-color: #7e22ce;
+}
+.custom-button {
+  background-color: #7e22ce;
+  color: #fff;
+  margin: 10px;
+}
+
+.hero-img{
+  background: url(https://images.pexels.com/photos/8636589/pexels-photo-8636589.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  height: 60vh;left: 0%;
+  clip-path: polygon(10% 0px, 100% 0%, 100% 100%, 0px 100%);
+}
+.hero-text{
+  height: 60vh;
+ display: flex;
+  align-items: center;
+  justify-content: center;
+}
